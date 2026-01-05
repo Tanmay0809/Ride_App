@@ -45,10 +45,10 @@ public class RatingServlet extends HttpServlet {
 
         ratingService.submitRating(rating);
 
-        // ✅ clear only ride, NOT session
+        //  clear only ride, NOT session
         session.removeAttribute("ride");
 
-        // ✅ role-safe redirect
+        // role-safe redirect
         response.sendRedirect(request.getContextPath() + "/jsp/dashboard.jsp");
     }
 }

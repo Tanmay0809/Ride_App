@@ -31,7 +31,7 @@ public class LoginServlet extends HttpServlet {
         HttpSession session = request.getSession();
         session.setAttribute("loggedInUser", user);
 
-        // ✅ No role handling here
+        // No role handling here
         response.sendRedirect("jsp/dashboard.jsp");
     }
 }

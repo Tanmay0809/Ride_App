@@ -33,7 +33,7 @@ public class RideStatusServlet extends HttpServlet {
             return;
         }
 
-        // ✅ ALWAYS DB STATE
+        //  ALWAYS DB STATE
         response.getWriter().write(ride.getStatus().name());
     }
 }
